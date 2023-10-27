@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calculadoraSumaAngular';
+  resultado: number = 0;
+  resultadoVisible: boolean = false;
+
+  sumarNumeros(numeros: number[]) {
+    this.resultado = numeros[0] + numeros[1];
+    this.resultadoVisible = true;
+  }
 }
