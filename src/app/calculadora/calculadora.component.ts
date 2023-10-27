@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./calculadora.component.css']
 })
 export class CalculadoraComponent {
+  /*Resultado de la suma de los números */
   @Input() resultado: number = 0;
 }
 

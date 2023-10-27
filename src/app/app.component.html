@@ -1,4 +1,4 @@
 <router-outlet></router-outlet>
-
+<!-- Componente que emite los números y muestra el resultado de la suma -->
 <app-input-text (numerosSumados)="sumarNumeros($event)"></app-input-text>
 <app-calculadora *ngIf="resultadoVisible" [resultado]="resultado"></app-calculadora>
